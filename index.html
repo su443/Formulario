@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="JS/validar.js"></script>
+</head>
+<body>
+    <h1><center> MI FORMULARIO </center></h1>
+    <form class="register" action="registrar.php" method="post" onsubmit="return validar();" enctype="multipart/form-data">
+        <h2 class="tittle"> LLENADO DE FORMULARIO <img src="IMG/NSS.png" heigth="50px" width="50px"> </h2>
+        <div class="contenedor">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="i50">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required class="i50">
+            <input type="email" id="correo" name="correo" placeholder="Email" required class="i100">
+            <input type="text" id="usuario" name="usuario" placeholder="Usser" required class="i50">
+            <input type="password" id="clave" name="clave" placeholder="&#128273; Password" required class="i50">
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono" required class="i100">
+            
+            
+            <input type="date" id="fnac" name="fnac" placeholder="Fecha de nacimiento" required class="i50">
+            <label>Casa</label>
+            <input type="checkbox" id="casa" name="casa" placeholder="Casa" required> 
+            <label>Escuela</label>
+            <input type="checkbox" id="escuela" name="escuela" placeholder="Escuela" required> 
+            <label class="i50">Genero</label>
+            <label class="">Maculino</label><input type="radio" id="masculino" name="masculino" required>
+            <label class="">Femenino</label><input type="radio" id="Femenino" name="femenino" required>
+            
+            <select name="residencia" id="residencia" class="i100" placeholder="Estado Seleccion" >
+                <option value="1">Edo Mex</option>
+                <option value="2">CDMX</option>
+                <option value="3">Hidalgo</option>
+                <option value="4">Durango</option>
+                <option value="5">Veracruz</option>
+                <option value="6">Puebla</option>
+                <option value="7">Sinaloa</option>
+                <option value="8">Baja California</option>
+                <option value="9">Oaxaca</option>
+                <option value="10">Zacatecas</option>
+            </select>
+            
+            <input id="foto" type="file" name="foto" required class="i100">
+            <input type="submit" value="Sing me up" class="enviar">
+            <p class="link">¿Ya estas registrado? <a href="loging.php"> Ingresar aquí</a></p>
+        </div>
+    </form>
+    
+</body>
+</html>
+
